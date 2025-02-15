@@ -1,1 +1,26 @@
+package exercicio44;
+import java.util.Scanner;
+
+public class Vendedor {
+	public static void main (String[]args) {
+		String nome;
+		double salariofixo;
+		double totalvendas;
+		
+		java.util.Scanner ler = new Scanner(System.in);
+		
+		System.out.printf("Digite o nome do vendedor.");
+		nome = ler.nextLine();
+		System.out.printf("Digite o salário fixo:");
+		salariofixo = ler.nextDouble();
+		System.out.printf("Digite o valor total de vendas:");
+		totalvendas = ler.nextDouble();
+		
+		double comissao = totalvendas*0.15;
+		double receber = salariofixo + comissao;
+		
+		 System.out.printf("Total a receber fim do mês: R$ %.2f%n", receber);
+	}
+
+}
 
