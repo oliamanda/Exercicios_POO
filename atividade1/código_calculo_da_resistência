@@ -1,1 +1,25 @@
+package calculo;
+import java.util.Scanner;
+
+public class ResistenciaSerie {
+	public static void main (String []args ) {
+		double  r1;
+		double r2;
+		double r3;
+		double r4;
+		
+		
+		java.util.Scanner ler = new Scanner(System.in);
+		r1 = ler.nextDouble();
+		r2 = ler.nextDouble();
+		r3 = ler.nextDouble();
+		r4 = ler.nextDouble();
+;
+		double resistencia_total = r1+r2+r3+r4;
+				
+		System.out.printf("Leia a resisteência total é %f.", resistencia_total);
+	}
+	
+
+}
 
